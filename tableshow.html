@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Table Show</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>STUDENT TABLE</h1>
+
+    <table id="studentTable">
+         <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No.</th>
+                <th id="cityHeader">City</th>
+            </tr>
+        </thead>
+         <!-- Table Header end -->
+        <tbody>
+           
+            <tr>
+                <td>John Doe</td>
+                <td>101</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>102</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>103</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>104</td>
+                <td>Danver</td>
+            </tr>
+            <tr>
+                <td>Kevin</td>
+                <td>105</td>
+                <td>Phoenix</td>
+            </tr>
+            <!-- Add more rows here -->
+        </tbody>
+    </table>
+
+    <!-- Button Section -->
+    <div>
+        <button type="button" id="hideCity" class="btn btn-danger">Hide City</button>
+        <button type="button" id="showCity" class="btn btn-success">Show City</button>
+    </div>
+    <!-- <div>
+        <button id="showCity">Show City</button>
+        <button id="hideCity">Hide City</button>
+    </div> -->
+    
+
+    <script src="tableshow.js"></script>
+</body>
+
+</html>
